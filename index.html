@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bharat Fitness Den | Coming Soon</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Oswald:wght@300;400;500;600;700&display=swap');
 
@@ -129,8 +130,7 @@ display:none;
   }
 
   .logo-icon{
-    width: auto;
-    height: auto;
+    
     border: none;
     border-radius: 0;
     background: transparent;
@@ -138,7 +138,9 @@ display:none;
     align-items:center;
     justify-content:center;
     box-shadow:none;
-    margin-right: -40px !important;
+    width:290px;
+  height:auto;
+  display:block;
 }
 
   .logo-text .line1{
@@ -810,6 +812,319 @@ margin:0 auto 35px;
     .notify-form{ flex-direction: column; clip-path: none; border-radius: 4px; }
     .notify-form button{ padding: 16px; }
   }
+
+  .contact-info{
+  max-width:800px;
+  margin:25px auto;
+}
+
+.contact-row{
+  display:flex;
+  justify-content:center;
+  gap:60px;
+  margin-bottom:20px;
+  flex-wrap:wrap;
+}
+
+.contact-row div{
+  color:#fff;
+  font-size:18px;
+}
+
+.contact-info strong{
+  color:#ff1b1b;
+}
+
+.contact-info a{
+  color:#fff;
+  text-decoration:none;
+}
+
+.address{
+  text-align:center;
+  color:#fff;
+  line-height:1.8;
+}
+.contact-info-horizontal{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:30px;
+  flex-wrap:wrap;
+  margin:25px 0;
+  color:#fff;
+}
+
+.contact-info-horizontal strong{
+  color:#ff1b1b;
+}
+/* =====================================
+   GLOBAL RESPONSIVE IMPROVEMENTS
+===================================== */
+
+/* Prevent images from overflowing */
+img{
+  max-width:100%;
+  height:auto;
+}
+
+/* Large Desktop Screens */
+@media (min-width:1600px){
+
+  .hero-content{
+    max-width:1400px;
+    margin:auto;
+  }
+
+  .gallery-grid{
+    max-width:1400px;
+  }
+
+  .pillars-inner{
+    max-width:1300px;
+  }
+
+  footer{
+    padding:50px 20px;
+  }
+}
+
+/* =====================================
+   TABLETS
+===================================== */
+@media (max-width:1024px){
+
+  .topbar{
+    padding:20px;
+  }
+
+  .logo-icon img{
+    width:220px !important;
+    height:auto !important;
+  }
+
+  .hero-content h1{
+    font-size:clamp(70px,10vw,120px);
+  }
+
+  .countdown{
+    gap:12px;
+  }
+
+  .countdown .box{
+    width:80px;
+  }
+
+  .gallery-grid{
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows:auto;
+  }
+
+  .contact-info-horizontal{
+    gap:20px;
+    font-size:14px;
+  }
+}
+
+/* =====================================
+   MOBILE DEVICES
+===================================== */
+@media (max-width:768px){
+
+  .topbar{
+    flex-direction:column;
+    gap:15px;
+    padding:20px;
+  }
+
+  .logo-icon{
+    margin-right:0 !important;
+  }
+
+  .logo-icon img{
+    width:220px !important;
+    height:auto !important;
+  }
+
+  .hero-content{
+    padding:20px 15px 90px;
+  }
+
+  .hero-content .pre{
+    font-size:12px;
+    letter-spacing:4px;
+  }
+
+  .hero-content h1{
+    font-size:clamp(60px,18vw,90px);
+    letter-spacing:4px;
+  }
+
+  .hero-content .sub{
+    font-size:14px;
+    letter-spacing:3px;
+    line-height:1.8;
+  }
+
+  .countdown-wrap{
+    margin-top:0;
+    padding-bottom:40px;
+  }
+
+  .countdown{
+    gap:10px;
+  }
+
+  .countdown .box{
+    width:70px;
+    padding:12px 0;
+  }
+
+  .countdown .box .num{
+    font-size:26px;
+  }
+
+  .countdown .box .unit{
+    font-size:10px;
+    letter-spacing:2px;
+  }
+
+  .section-title{
+    font-size:34px;
+  }
+
+  .title{
+    font-size:22px;
+  }
+
+  .desc{
+    font-size:13px;
+    letter-spacing:2px;
+  }
+
+  .notify-section h2{
+    font-size:38px;
+  }
+
+  .notify-form{
+    max-width:100%;
+  }
+
+  .contact-info-horizontal{
+    flex-direction:column;
+    gap:12px;
+    font-size:15px;
+    text-align:center;
+  }
+
+  footer .roar{
+    font-size:32px;
+  }
+}
+
+/* =====================================
+   SMALL PHONES
+===================================== */
+@media (max-width:480px){
+
+  .hashtag{
+    font-size:11px;
+    letter-spacing:2px;
+  }
+
+  .logo-icon img{
+    width:180px !important;
+  }
+
+  .hero-content h1{
+    font-size:52px;
+    line-height:.9;
+  }
+
+  .hero-content .sub{
+    font-size:12px;
+    letter-spacing:2px;
+  }
+
+  .countdown{
+    gap:8px;
+  }
+
+  .countdown .box{
+    width:60px;
+  }
+
+  .countdown .box .num{
+    font-size:22px;
+  }
+
+  .section-tag{
+    font-size:11px;
+  }
+
+  .section-title{
+    font-size:28px;
+  }
+
+  .pillar{
+    padding:20px;
+    gap:15px;
+  }
+
+  .circle{
+    width:60px;
+    height:60px;
+    font-size:24px;
+  }
+
+  .notify-section{
+    padding:50px 15px;
+  }
+
+  .notify-form input{
+    font-size:14px;
+    padding-left:15px;
+  }
+
+  .notify-form button{
+    font-size:12px;
+  }
+
+  .contact-info-horizontal{
+    font-size:13px;
+    line-height:1.7;
+  }
+
+  .copy{
+    font-size:10px;
+  }
+}
+
+/* =====================================
+   VERY SMALL DEVICES (320px)
+===================================== */
+@media (max-width:360px){
+
+  .hero-content h1{
+    font-size:44px;
+  }
+
+  .hero-content .sub{
+    font-size:11px;
+  }
+
+  .countdown .box{
+    width:55px;
+  }
+
+  .countdown .box .num{
+    font-size:20px;
+  }
+
+  .contact-info-horizontal{
+    font-size:12px;
+  }
+}
 </style>
 </head>
 <body>
@@ -946,14 +1261,38 @@ Forged In <span>Iron</span>
 
   <!-- ================= FOOTER ================= -->
   <footer>
-    <div class="roar">NO EXCUSES. <span>Keep Roaring.</span></div>
-    <div class="socials">
-      <a href="#" title="Instagram">◎</a>
-      <a href="#" title="Facebook">◉</a>
+  <div class="roar">NO EXCUSES. <span>Keep Roaring.</span></div>
+
+  <div class="socials">
+    <a href="https://www.instagram.com/bharatfiitnessden/?hl=en" title="Instagram"><i class="fa-brands fa-square-instagram"></i></a>
+    <a href="https://www.facebook.com/p/Bharat-Fiitness-Den-61554594111816/" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+  </div>
+
+  <div class="handle">@bharatfiitnessden</div>
+
+  <!-- <div class="contact-info">
+    <div class="contact-row">
+    <div>
+      <strong>Phone:</strong>
+      <a href="tel:+918339901557">8339901557</a>
     </div>
-    <div class="handle">@bharatfiitnessden</div>
-    <div class="copy">© 2026 Bharat Fitness Den. All rights reserved.</div>
-  </footer>
+
+    <div>
+      <strong>Email:</strong>
+      <a href="mailto:bharatfiitnessden@gmail.com">
+        bharatfiitnessden@gmail.com
+      </a>
+    </div>
+  </div>
+  </div> -->
+  <div class="contact-info-horizontal">
+  <span><strong>Phone:</strong> +91 8339901557</span>
+  <span><strong>Email:</strong> bharatfiitnessden@gmail.com</span>
+  <span><strong>Address:</strong> Jayadev Vihar, Bhubaneswar</span>
+</div>
+
+  <div class="copy">© 2026 Bharat Fitness Den. All rights reserved.</div>
+</footer>
 
   <script>
     // Set launch date here (Year, MonthIndex(0-11), Day, Hour, Min, Sec)
